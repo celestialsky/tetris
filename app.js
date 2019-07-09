@@ -1,5 +1,5 @@
-const playfield = []
-//const tetromino;
+const tetromino = []
+let currentTetromino;
 const height = 16
 const width = 10
 const gameState = 0 //play pause game over
@@ -9,7 +9,7 @@ const filledSpace = []
 const direction = ""
 const score = 0
 
-function makePlayField() {
+const makePlayField = () => {
     const playfield = document.querySelector('.tetris-board')
     playfield.innerText = ''
     let counter = 0
@@ -33,3 +33,33 @@ function makePlayField() {
 }
 
 makePlayField()
+
+const tetrominoShape = () => {
+    let t = [[1, 0], [0,1], [1,1],[2,1]] // T
+    let i = [[0, 0], [0, 1], [0, 2], [0, 3]] // line
+    let o = [[0, 0], [0, 1], [1, 0], [1, 1]] // square
+    let l = [[2,0], [0, 1], [1, 1], [2,1]] // L
+    let s = [[0,0], [1,0], [1,1], [2,1]] // S
+    let j = [[2,1], [1,1], [1,0], [0,0]] // J
+    tetromino.push(t);
+    tetromino.push(i);
+    tetromino.push(o);
+    tetromino.push(l);
+    tetromino.push(s);
+    tetromino.push(j);
+}
+
+const createTetromino = () => {
+  let randTetro = Math.floor(Math.random() * tetromino.length)
+  let randColor = Math.floor(Math.random() * color.length)
+  const center = Math.floor(width / 2)
+  let tetromino = tetromino[randTetro]
+  const location = [center, 0]
+
+  currentTetromino = {
+    tetromino: tetromino,
+    color: color[randColor],
+    location: location,
+    index: blockCoordinates(tetromino, location) // used for collision detection
+  }
+}
