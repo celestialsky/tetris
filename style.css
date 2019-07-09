@@ -1,12 +1,16 @@
 .row{
   display: flex;
-  width: 25%;
-  length: 25px;
+  width: 35%;
+  length: 35%;
   border: 1px solid black
 }
 
 .space{
-  width: 10%;
-  length: 25px;
+  width: 35%;
+  length: 35%;
   border: 1px solid black
+}
+
+.table-board {
+  margin: 0px auto;
 }
