@@ -1,0 +1,12 @@
+.row{
+  display: flex;
+  width: 25%;
+  length: 25px;
+  border: 1px solid black
+}
+
+.space{
+  width: 10%;
+  length: 25px;
+  border: 1px solid black
+}
