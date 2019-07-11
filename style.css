@@ -1,14 +1,16 @@
-.row{
-  display: flex;
-  width: 35%;
-  length: 35%;
-  border: 1px solid black
+ .row{
+  //display: flex;
+  width: 10px;
+  length: 16px;
+  border: 1px solid grey;
+  padding: 0px
 }
 
 .space{
-  width: 35%;
-  length: 35%;
-  border: 1px solid black
+  width: 15px;
+  height: 15px;
+  border: 1px solid grey;
+  border-radius: 3px 3px
 }
 
 .table-board {
