@@ -15,7 +15,7 @@ down arrow- to move down
 
 The goal of the game is to place all block on the screen to form a complete row to score points!
 
-*This is a work in progress!*    
+### *This is a work in progress!*    
 
 ==========================
 
