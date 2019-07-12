@@ -1,10 +1,10 @@
 # Tetris
 =========================
-###Tetris using jquery
+### Tetris using jquery
 
 This project uses basic HTML, CSS, and jQuery to create a simple Tetris game  
 
-#Directions
+# Directions
 =========================
 Use your **arrow keys** to move the tetromino around!
 Press:  
