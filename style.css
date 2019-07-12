@@ -1,4 +1,4 @@
- .row{
+ /* .row{
   //display: flex;
   width: 10px;
   length: 16px;
@@ -15,4 +15,10 @@
 
 .table-board {
   margin: 0px auto;
+} */
+
+td {
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
 }
