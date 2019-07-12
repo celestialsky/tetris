@@ -22,5 +22,5 @@ The goal of the game is to place all block on the screen to form a complete row 
 Game logic works, but there are game features to be added, mainly:  
 -adding to score after a line clears  
 -increasing drop speed after a certain score limit has been reached  
--a timer for each level
+-a timer for each level  
 -a start, restart, and gameover function
